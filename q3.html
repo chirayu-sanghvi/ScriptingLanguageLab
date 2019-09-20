@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet"> 
+ <style>
+ h1{
+ font-family: 'Turret Road', cursive;
+ }
+ </style>
+</head>
+>
+<body>
+<h1> lets know more about different types of fonts available </h1>
+<p id ="demo"></p>
+<p id ="demos"></p>
+<script>
+	var x;
+	var myobj = {
+		"fonts" : ["calibri","arabic", "indiana"] ,
+			
+		"size" : [30, 40 , 50 ]
+	}
+	
+	console.log(myobj)
+	
+	var fontsHTML = ""
+	var sizeHTML = ""
+	for (x = 0; x < myobj.fonts.length; x++) {
+	  fontsHTML += myobj.fonts[x] + "<br>" ;
+	  sizeHTML += myobj.size[x]+"<br>";
+	}
+	document.getElementById('demo').innerHTML = fontsHTML
+	document.getElementById('demos').innerHTML = sizeHTML
+	
+</script>
+</body>
+</html>
