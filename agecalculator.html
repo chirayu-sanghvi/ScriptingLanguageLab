@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<h1>Lets calculate your AGE :-)</h1>
+<p id="demo"></p>
+<script>
+function agecalci(dob){
+var diff = Date.now() - dob.getTime();
+var age = new Date(diff);
+ return Math.abs(age.getUTCFullYear() - 1970);
+ }
+ dob = prompt("what is your birthdate in (year , month , date)");
+ alert(agecalci(new Date(dob)))
+ </script>
+</body>
+</html>
+
